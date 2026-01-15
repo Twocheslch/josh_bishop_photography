@@ -27,7 +27,7 @@ function pickRandomIndex(len, excluded = new Set()) {
   return idx;
 }
 
-function setupTileRotator(tile, images, intervalMs = 5000) {
+function setupTileRotator(tile, images, intervalMs = 4000) {
   const current = tile.querySelector(".slide.current");
   const next = tile.querySelector(".slide.next");
   if (!current || !next || !images || images.length < 2) return;
@@ -82,6 +82,6 @@ function setupTileRotator(tile, images, intervalMs = 5000) {
 document.addEventListener("DOMContentLoaded", () => {
   document.querySelectorAll(".tile--rotate[data-rotate]").forEach((tile) => {
     const key = tile.getAttribute("data-rotate");
-    setupTileRotator(tile, ROTATOR_IMAGES[key], 5000);
+    setupTileRotator(tile, ROTATOR_IMAGES[key], 4000);
   });
 });
