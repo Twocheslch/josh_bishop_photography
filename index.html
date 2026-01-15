@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Your Name Photography</title>
+    <link rel="stylesheet" href="styles/styles.css" />
+    <script src="scripts/rotator.js" defer></script>
+</head>
+
+<body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+        <div class="container header-inner">
+            <div class="brand">
+                <div class="brand-mark" aria-hidden="true"></div>
+                <div class="brand-text">
+                    <span class="brand-name">Josh Bishop</span>
+                    <span class="brand-tagline">Professional Photography</span>
+                </div>
+            </div>
+
+            <nav class="nav" aria-label="Primary navigation">
+                <a href="#" class="nav-link">Home</a>
+                <a href="real-estate.html" class="nav-link">Real Estate</a>
+                <a href="clients.html" class="nav-link">Client Photos</a>
+                <a href="video.html" class="nav-link">Video</a>
+                <a href="#contact" class="nav-link nav-cta">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main">
+        <section class="hero">
+            <div class="container">
+                <div class="hero-card">
+                    <div class="hero-portrait">
+                        <img src="https://picsum.photos/800/1200" alt="Portrait of the photographer" />
+                    </div>
+
+                    <div class="hero-quote">
+                        <p class="quote">
+                            I’m a real estate photographer and videographer with three years of experience in these
+                            fields. I love creating clean, professional visuals for property listings. While studying at
+                            BYU-Idaho, I’ve refined a modern approach focused on quality, consistency, and
+                            results—helping agents present homes at their best.
+                        </p>
+
+                        <p class="quote-tagline">Where Listings Come to Life</p>
+                        <p class="quote-attrib">Josh Bishop</p>
+
+                        <div class="hero-actions">
+                            <a class="btn" href="real-estate.html">View Real Estate</a>
+                            <a class="btn btn-outline" href="#contact">Get in Touch</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="tiles">
+            <div class="container">
+                <div class="tile-grid">
+                    <a class="tile tile--rotate" href="real-estate.html" data-rotate="realestate"
+                        aria-label="Real Estate gallery">
+                        <div class="tile-rotator">
+                            <img class="slide current" src="images/re-subpage/re-kitchen.webp" alt="Real estate photo">
+                            <img class="slide next" src="images/re-subpage/re-kitchen-island.webp" alt="" aria-hidden="true">
+                        </div>
+                    </a>
+
+                    <a class="tile tile--rotate" href="clients.html" data-rotate="clients"
+                        aria-label="Client Photos gallery">
+                        <div class="tile-rotator">
+                            <img class="slide current" src="images/company-subpage/comp-filling-gas.webp" alt="Client photo">
+                            <img class="slide next" src="images/company-subpage/comp-touching-engine.webp" alt="" aria-hidden="true">
+                        </div>
+                    </a>
+
+                    <a class="tile" href="video.html" aria-label="Video portfolio">
+                        <img src="https://picsum.photos/800/1200" alt="Video camera on tripod" />
+                    </a>
+                </div>
+
+                <div class="tile-labels" aria-hidden="true">
+                    <span>Real Estate</span>
+                    <span>Client Photos</span>
+                    <span>Video</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer" id="contact">
+        <div class="container footer-inner">
+            <div class="footer-col">
+                <h3 class="footer-title">Contact</h3>
+                <p class="footer-text">
+                    Phone: <a href="tel:+12085551234">(208) 555-1234</a><br />
+                    Email: <a href="mailto:hello@yourdomain.com">hello@yourdomain.com</a><br />
+                    Location: Boise, ID
+                </p>
+            </div>
+            
+            <!-- space for the footer -->
+            <div class="footer-col footer-logo" aria-label="Logo area">
+                <div class="logo-box">
+                    <img src="https://picsum.photos/50/50" alt="">
+                </div>
+            </div>
+
+            <div class="footer-col footer-right">
+                <h3 class="footer-title">Legal</h3>
+                <p class="footer-text">
+                    © <span id="year">2026</span> Your Name Photography<br />
+                    All rights reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+</body>
+
+</html>
