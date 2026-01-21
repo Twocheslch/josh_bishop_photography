@@ -7,6 +7,7 @@
     <title>Bishop's Media</title>
     <link rel="stylesheet" href="styles/styles.css" />
     <script src="scripts/rotator.js" defer></script>
+    <script src="scripts/menu.js" defer></script>
 </head>
 
 <body>
@@ -15,15 +16,21 @@
     <header class="site-header">
         <div class="container header-inner">
             <div class="brand">
-                <div class="brand-mark" aria-hidden="true"><img class= "logo-img" src="images/logo/logo.webp" alt=""></div>
+                <div class="brand-mark" aria-hidden="true"><img class="logo-img" src="images/logo/logo.webp" alt="">
+                </div>
 
                 <div class="brand-text">
                     <span class="brand-name">Josh Bishop</span>
                     <span class="brand-tagline">Professional Photography</span>
                 </div>
             </div>
+            
+            <button class="menu-btn" type="button" aria-label="Open menu" aria-controls="site-nav"
+                aria-expanded="false">
+                ☰
+            </button>
 
-            <nav class="nav" aria-label="Primary navigation">
+            <nav class="nav" id="site-nav" aria-label="Primary navigation">
                 <a href="#" class="nav-link">Home</a>
                 <a href="real-estate.html" class="nav-link">Real Estate</a>
                 <a href="clients.html" class="nav-link">Client Photos</a>
@@ -34,6 +41,47 @@
     </header>
 
     <main id="main">
+
+
+        <section class="tiles">
+            <div class="container">
+                <div class="tile-grid">
+                    <a class="tile tile--rotate" href="real-estate.html" data-rotate="realestate"
+                        aria-label="Real Estate gallery">
+                        <div class="tile-rotator">
+                            <img class="slide current" src="images/re-subpage/re-kitchen.webp" alt="Real estate photo">
+                            <img class="slide next" src="images/re-subpage/re-kitchen-island.webp" alt=""
+                                aria-hidden="true">
+                        </div>
+                    </a>
+
+                    <a class="tile tile--rotate" href="clients.html" data-rotate="clients"
+                        aria-label="Client Photos gallery">
+                        <div class="tile-rotator">
+                            <img class="slide current" src="images/company-subpage/comp-filling-gas.webp"
+                                alt="Client photo">
+                            <img class="slide next" src="images/company-subpage/comp-touching-engine.webp" alt=""
+                                aria-hidden="true">
+                        </div>
+                    </a>
+
+                    <a class="tile" href="video.html" aria-label="Video portfolio">
+                        <iframe
+                            src="https://www.youtube.com/embed/4sCtvaL4vBQ?autoplay=1&mute=1&controls=0&rel=0&playsinline=1"
+                            title="Video preview" frameborder="0"
+                            allow="autoplay; encrypted-media; picture-in-picture; web-share" allowfullscreen>
+                        </iframe>
+                    </a>
+                </div>
+
+                <div class="tile-labels" aria-hidden="true">
+                    <span>Real Estate</span>
+                    <span>Client Photos</span>
+                    <span>Video</span>
+                </div>
+            </div>
+        </section>
+
         <section class="hero">
             <div class="container">
                 <div class="hero-card">
@@ -60,41 +108,6 @@
                 </div>
             </div>
         </section>
-
-        <section class="tiles">
-            <div class="container">
-                <div class="tile-grid">
-                    <a class="tile tile--rotate" href="real-estate.html" data-rotate="realestate"
-                        aria-label="Real Estate gallery">
-                        <div class="tile-rotator">
-                            <img class="slide current" src="images/re-subpage/re-kitchen.webp" alt="Real estate photo">
-                            <img class="slide next" src="images/re-subpage/re-kitchen-island.webp" alt=""
-                                aria-hidden="true">
-                        </div>
-                    </a>
-
-                    <a class="tile tile--rotate" href="clients.html" data-rotate="clients"
-                        aria-label="Client Photos gallery">
-                        <div class="tile-rotator">
-                            <img class="slide current" src="images/company-subpage/comp-filling-gas.webp"
-                                alt="Client photo">
-                            <img class="slide next" src="images/company-subpage/comp-touching-engine.webp" alt=""
-                                aria-hidden="true">
-                        </div>
-                    </a>
-
-                    <a class="tile" href="video.html" aria-label="Video portfolio">
-                        <img src="https://placehold.co/800x1200" alt="Video camera on tripod" />
-                    </a>
-                </div>
-
-                <div class="tile-labels" aria-hidden="true">
-                    <span>Real Estate</span>
-                    <span>Client Photos</span>
-                    <span>Video</span>
-                </div>
-            </div>
-        </section>
     </main>
 
     <footer class="site-footer" id="contact">
@@ -111,7 +124,7 @@
             <!-- space for the footer -->
             <div class="footer-col footer-logo" aria-label="Logo area">
                 <div class="logo-box">
-                    <img class= "logo-img" src="images/logo/logo.webp" alt="">
+                    <img class="logo-img" src="images/logo/logo.webp" alt="">
                 </div>
             </div>
 

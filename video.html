@@ -1,13 +1,162 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Video | Bishop's Media</title>
+    <link rel="stylesheet" href="styles/styles.css" />
+    <script src="scripts/rotator.js" defer></script>
+    <script src="scripts/browser.js" defer></script>
+    <script src="scripts/menu.js" defer></script>
 </head>
+
 <body>
-    <main>
-        <p>video subpage</p>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+        <div class="container header-inner">
+            <div class="brand">
+                <div class="brand-mark" aria-hidden="true">
+                    <img class="logo-img" src="images/logo/logo.webp" alt="">
+                </div>
+                <div class="brand-text">
+                    <span class="brand-name">Josh Bishop</span>
+                    <span class="brand-tagline">Professional Photography</span>
+                </div>
+            </div>
+
+            <button class="menu-btn" type="button" aria-label="Open menu" aria-controls="site-nav"
+                aria-expanded="false">
+                ☰
+            </button>
+
+            <nav class="nav" id="site-nav" aria-label="Primary navigation">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="real-estate.html" class="nav-link">Real Estate</a>
+                <a href="clients.html" class="nav-link">Client Photos</a>
+                <a href="video.html" class="nav-link">Video</a>
+                <a href="#contact" class="nav-link nav-cta">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main">
+        <section class="split">
+            <div class="container split-grid">
+
+                <div class="panel">
+                    <h1>Book Video</h1>
+                    <p class="subhead">Walkthroughs, reels, social clips—tell me what you need and your deadline.</p>
+
+                    <form class="form" action="#" method="post">
+                        <div class="form-row">
+                            <label for="name">Name</label>
+                            <input id="name" name="name" type="text" autocomplete="name" required>
+                        </div>
+
+                        <div class="form-row">
+                            <label for="email">Email</label>
+                            <input id="email" name="email" type="email" autocomplete="email" required>
+                        </div>
+
+                        <div class="form-row">
+                            <label for="phone">Phone</label>
+                            <input id="phone" name="phone" type="tel" autocomplete="tel">
+                        </div>
+
+                        <div class="form-row">
+                            <label for="service">Service</label>
+                            <select id="service" name="service" required>
+                                <option value="real-estate">Real Estate</option>
+                                <option value="clients">Client Photos</option>
+                                <option value="video" selected>Video</option>
+                            </select>
+                        </div>
+
+                        <div class="form-row">
+                            <label for="details">Details</label>
+                            <textarea id="details" name="details"
+                                placeholder="Type of video, location, duration, timeline..."></textarea>
+                        </div>
+
+                        <div class="form-actions">
+                            <button class="btn" type="submit">Request Booking</button>
+                            <a class="btn btn-outline" href="#contact">Contact Info</a>
+                        </div>
+                    </form>
+                </div>
+
+                <a class="tile tile--rotate preview-tile" href="#" data-browser="video" data-type="video"
+                    aria-label="Open Video gallery">
+                    <div class="tile-rotator">
+                        <img class="slide current" src="https://placehold.co/800x800" alt="Video preview">
+                        <img class="slide next" src="https://placehold.co/800x800" alt="" aria-hidden="true">
+                    </div>
+                </a>
+
+
+            </div>
+        </section>
     </main>
+
+    <footer class="site-footer" id="contact">
+        <div class="container footer-inner">
+            <div class="footer-col">
+                <h3 class="footer-title">Contact</h3>
+                <p class="footer-text">
+                    Phone: <a href="tel:+4066002804">(406) 600-2804</a><br />
+                    Email: <a href="mailto:bishopvideosphotos@gmail.com">bishopvideosphotos@gmail.com</a><br />
+                    Location: Rexburg, ID
+                </p>
+            </div>
+
+            <div class="footer-col footer-logo" aria-label="Logo area">
+                <div class="logo-box">
+                    <img class="logo-img" src="images/logo/logo.webp" alt="">
+                </div>
+            </div>
+
+            <div class="footer-col footer-right">
+                <h3 class="footer-title">Legal</h3>
+                <p class="footer-text">
+                    © <span id="year">2026</span> Joshua Bishop<br />
+                    All rights reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="modal-overlay" id="mediaModal" aria-hidden="true">
+        <div class="modal-window" role="dialog" aria-modal="true" aria-label="Media browser">
+            <div class="modal-topbar">
+                <div class="modal-title" id="modalTitle">Gallery</div>
+                <button class="modal-close" type="button" id="modalClose">Close</button>
+            </div>
+
+            <div class="modal-body" id="modalWindow">
+                <button class="modal-nav" type="button" id="modalPrev" aria-label="Previous">‹</button>
+
+                <div class="modal-stage" id="modalStage">
+                    <img id="modalImg" src="" alt="" />
+                    <div class="modal-video" id="modalVideoWrap" hidden>
+                        <iframe id="modalVideo" src="" title="YouTube video player"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+                    </div>
+                </div>
+
+                <button class="modal-nav" type="button" id="modalNext" aria-label="Next">›</button>
+            </div>
+
+            <div class="modal-footer" id="modalCounter">1 / 1</div>
+        </div>
+    </div>
+
+
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
 </body>
+
 </html>
