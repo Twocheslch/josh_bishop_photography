@@ -330,7 +330,8 @@ a:hover {
   height: 100%;
   display: block;
   border: 0;
-  pointer-events: none;
+  pointer-events: auto;
+  
 
   /* Ensures each is perfectly square */
   aspect-ratio: 1 / 1;
@@ -343,6 +344,14 @@ a:hover {
   object-fit: cover; /* auto cut to fill */
   transform: scale(1.01);
   transition: transform 200ms ease, filter 200ms ease;
+}
+
+.tile > iframe{
+  width: 100%;
+  height: 100%;
+  display: block;
+  border: 0;
+  pointer-events: none;
 }
 
 .tile::after {
@@ -618,6 +627,16 @@ textarea:focus {
   align-self: center;
 }
 
+/*                                                      Kinda just temporary */
+.preview-tile > iframe{
+  width: 100%;
+  height: 100%;
+  display: block;
+  border: 0;
+  pointer-events: none;
+}
+/*                                                      Kinda just temporary */
+
 /* Responsive: stack */
 @media (max-width: 900px) {
   .split-grid {
@@ -760,3 +779,5 @@ textarea:focus {
     width: 44px;
   }
 }
+
+
