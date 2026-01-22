@@ -582,6 +582,18 @@ a:hover {
   gap: 0.4rem;
 }
 
+.form-embed{
+  width: 100%;
+  overflow: hidden;
+}
+
+.form-embed iframe{
+  width: 100%;
+  min-height: 720px;
+  border: 0;
+}
+
+
 label {
   font-weight: 700;
   font-size: 0.95rem;
