@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | Josh Bishop</title>
+
+  <link rel="stylesheet" href="styles/styles.css" />
+  <link rel="stylesheet" href="styles/contact.css" />
+
+  <script src="scripts/menu.js" defer></script>
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <div class="brand-mark" aria-hidden="true"></div>
+        <div class="brand-text">
+          <span class="brand-name">Josh Bishop</span>
+          <span class="brand-tagline">Professional Photography</span>
+        </div>
+      </div>
+
+      <button class="menu-btn" type="button" aria-label="Open menu" aria-controls="site-nav" aria-expanded="false">☰</button>
+
+      <nav class="nav" id="site-nav" aria-label="Primary navigation">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="real-estate.html" class="nav-link">Real Estate</a>
+        <a href="clients.html" class="nav-link">Client Photos</a>
+        <a href="video.html" class="nav-link">Video</a>
+        <a href="contact.html" class="nav-link nav-cta">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="contact-wrap">
+      <div class="container contact-grid">
+
+        <div class="panel contact-panel">
+          <h1>Contact</h1>
+          <p class="subhead">
+            Request a booking, ask a question, or send over details for a shoot. I’ll get back to you as soon as I can.
+          </p>
+
+          <div class="contact-cards">
+            <div class="contact-card">
+              <div class="contact-label">Email</div>
+              <a class="contact-value" href="mailto:bishopvideosphotos@gmail.com">bishopvideosphotos@gmail.com</a>
+            </div>
+
+            <div class="contact-card">
+              <div class="contact-label">Phone</div>
+              <a class="contact-value" href="tel:+14066002804">(406) 600-2804</a>
+            </div>
+
+            <div class="contact-card">
+              <div class="contact-label">Location</div>
+              <div class="contact-value">Rexburg, ID</div>
+            </div>
+          </div>
+
+          <div class="contact-note">
+            <div class="note-title">Typical turnaround</div>
+            <div class="note-text">Photos: 24–48 hours • Video: varies by project scope</div>
+          </div>
+        </div>
+
+        <div class="panel form-panel">
+          <h2>Booking Form</h2>
+          <p class="subhead">Fill this out and I’ll follow up with availability and next steps.</p>
+
+          <div class="form-embed">
+            <iframe
+              src="https://docs.google.com/forms/d/e/1FAIpQLSdzf8NrI7qWFJkRljMxCz3Irtu58FCvj5BtbxRIutSVyq_fuQ/viewform?embedded=true"
+              title="Booking form"
+              loading="lazy"
+              referrerpolicy="no-referrer"
+              allowfullscreen>
+              Loading…
+            </iframe>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" id="contact">
+    <div class="container footer-inner">
+      <div class="footer-col">
+        <h3 class="footer-title">Contact</h3>
+        <p class="footer-text">
+          Phone: <a href="tel:+14066002804">(406) 600-2804</a><br />
+          Email: <a href="mailto:bishopvideosphotos@gmail.com">bishopvideosphotos@gmail.com</a><br />
+          Location: Rexburg, ID
+        </p>
+      </div>
+
+      <div class="footer-col footer-logo" aria-label="Logo area">
+        <div class="logo-box">
+          <span>LOGO</span>
+        </div>
+      </div>
+
+      <div class="footer-col footer-right">
+        <h3 class="footer-title">Legal</h3>
+        <p class="footer-text">
+          © <span id="year">2026</span> Josh Bishop<br />
+          All rights reserved.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
