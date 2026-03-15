@@ -9,7 +9,23 @@ const MEDIA = {
     "images/re-subpage/re-bathroom_.webp",
     "images/re-subpage/re-hallway-godrays.webp",
     "images/re-subpage/re-master-bedroom-fan.webp",
-    "images/re-subpage/re-stove.webp",
+    "images/re-subpage/white-black-boogaloo-01.webp",
+    "images/re-subpage/white-black-boogaloo-02.webp",
+    "images/re-subpage/white-black-boogaloo-03.webp",
+    "images/re-subpage/white-black-boogaloo-04.webp",
+    "images/re-subpage/white-black-boogaloo-05.webp",
+    "images/re-subpage/white-black-boogaloo-06.webp",
+    "images/re-subpage/white-black-boogaloo-07.webp",
+    "images/re-subpage/white-black-boogaloo-08.webp",
+    "images/re-subpage/white-black-boogaloo-09.webp",
+    "images/re-subpage/white-black-boogaloo-10.webp",
+    "images/re-subpage/white-black-boogaloo-11.webp",
+    "images/re-subpage/white-black-boogaloo-12.webp",
+    "images/re-subpage/white-black-boogaloo-13.webp",
+    "images/re-subpage/white-black-boogaloo-14.webp",
+    "images/re-subpage/white-black-boogaloo-15.webp",
+    "images/re-subpage/white-black-boogaloo-16.webp",
+    
   ],
 //   List of all photos included in the scroller 
   clients: [
@@ -17,7 +33,10 @@ const MEDIA = {
     "images/company-subpage/comp-filling-gas.webp",
     "images/company-subpage/comp-load-er-up.webp",
     "images/company-subpage/comp-plumbers-crack.webp",
-    "images/company-subpage/comp-touching-engine.webp"
+    "images/company-subpage/comp-touching-engine.webp",
+    "images/company-subpage/portraits-couple-1.webp",
+    "images/company-subpage/portraits-couple-2.webp",
+    "images/company-subpage/portraits-basketball-white-guy.webp"
   ],
   //   List of all videos included in the scroller 
   video: [
