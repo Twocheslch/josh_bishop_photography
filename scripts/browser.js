@@ -1,14 +1,14 @@
 const MEDIA = {
   //   List of all photos included in the scroller 
     realestate: [
-    "images/re-subpage/re-kitchen-island.webp",
-    "images/re-subpage/re-kitchen-long.webp",
-    "images/re-subpage/re-kitchen.webp",
-    "images/re-subpage/re-living-room-chairs.webp",
-    "images/re-subpage/re-stairs.webp",
-    "images/re-subpage/re-bathroom_.webp",
-    "images/re-subpage/re-hallway-godrays.webp",
-    "images/re-subpage/re-master-bedroom-fan.webp",
+    // "images/re-subpage/re-kitchen-island.webp",
+    // "images/re-subpage/re-kitchen-long.webp",
+    // "images/re-subpage/re-kitchen.webp",
+    // "images/re-subpage/re-living-room-chairs.webp",
+    // "images/re-subpage/re-stairs.webp",
+    // "images/re-subpage/re-bathroom_.webp",
+    // "images/re-subpage/re-hallway-godrays.webp",
+    // "images/re-subpage/re-master-bedroom-fan.webp",
     "images/re-subpage/white-black-boogaloo-01.webp",
     "images/re-subpage/white-black-boogaloo-02.webp",
     "images/re-subpage/white-black-boogaloo-03.webp",
