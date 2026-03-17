@@ -1,18 +1,11 @@
 
 const ROTATOR_IMAGES = {
   realestate: [
-    // "images/re-subpage/re-kitchen-island.webp",
-    // "images/re-subpage/re-kitchen-long.webp",
-    // "images/re-subpage/re-kitchen.webp",
-    // "images/re-subpage/re-living-room-chairs.webp",
-    // "images/re-subpage/re-stairs.webp",
-    // "images/re-subpage/re-bathroom_.webp",
-    // "images/re-subpage/re-hallway-godrays.webp",
-    // "images/re-subpage/re-master-bedroom-fan.webp",
-    "images/re-subpage/white-black-boogaloo-01.webp",
+    // Add new images here
+    "images/re-subpage/white-black-boogaloo-04.webp",
     "images/re-subpage/white-black-boogaloo-02.webp",
     "images/re-subpage/white-black-boogaloo-03.webp",
-    "images/re-subpage/white-black-boogaloo-04.webp",
+    "images/re-subpage/white-black-boogaloo-01.webp",
     "images/re-subpage/white-black-boogaloo-05.webp",
     "images/re-subpage/white-black-boogaloo-06.webp",
     "images/re-subpage/white-black-boogaloo-07.webp",
@@ -27,6 +20,7 @@ const ROTATOR_IMAGES = {
     "images/re-subpage/white-black-boogaloo-16.webp",
   ],
   clients: [
+    // Add new images here
     "images/company-subpage/comp-big-red.webp",
     "images/company-subpage/comp-filling-gas.webp",
     "images/company-subpage/comp-load-er-up.webp",
