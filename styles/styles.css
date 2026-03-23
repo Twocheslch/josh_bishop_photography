@@ -163,6 +163,16 @@ a:hover {
   background: rgba(1, 107, 231, 0.92);
 }
 
+.pricing-cta {
+  background: #69c47a;
+  color: var(--white);
+  opacity: 1;
+}
+
+.pricing-cta:hover {
+  background: #5bb46c;
+}
+
 /* nav */
 .menu-btn{
   display: none;
@@ -876,3 +886,22 @@ textarea:focus {
 }
 
 
+
+
+.pricing-page{
+  padding-top: 2rem;
+}
+
+.pricing-page__stack{
+  display: grid;
+  gap: 1.25rem;
+}
+
+.pricing-page__intro{
+  max-width: 760px;
+}
+
+.pricing-page__intro h1{
+  margin: 0 0 0.35rem;
+  font-size: clamp(1.8rem, 4vw, 2.5rem);
+}
