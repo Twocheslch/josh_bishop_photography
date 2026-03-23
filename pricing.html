@@ -6,6 +6,7 @@
   <title>Pricing | Josh Bishop</title>
 
   <link rel="stylesheet" href="styles/styles.css" />
+  <link rel="stylesheet" href="styles/contact-style.css" />
 
   <script src="scripts/menu.js" defer></script>
 </head>
@@ -30,128 +31,95 @@
         <a href="real-estate.html" class="nav-link">Real Estate</a>
         <a href="clients.html" class="nav-link">Client Photos</a>
         <a href="video.html" class="nav-link">Video</a>
-        <a href="pricing.html" class="nav-link pricing-cta">Pricing</a>
+        <a href="pricing.html" class="nav-link">Pricing</a>
         <a href="contact.html" class="nav-link nav-cta">Contact</a>
       </nav>
     </div>
   </header>
 
   <main id="main">
-    <section class="split pricing-page">
-      <div class="container pricing-page__stack">
-        <section class="panel pricing-page__intro" aria-labelledby="pricing-page-heading">
-          <p class="eyebrow">Pricing</p>
-          <h1 id="pricing-page-heading">All Services at a Glance</h1>
-          <p class="subhead">This page reuses the same pricing sections from the individual service pages, so everything stays familiar and easy to update.</p>
-        </section>
+    <section class="contact-wrap pricing-wrap">
+      <div class="container contact-grid">
 
-        <section class="panel pricing-panel" aria-labelledby="real-estate-pricing-heading">
-          <div class="pricing-panel__intro">
-            <p class="eyebrow">Pricing</p>
-            <h2 id="real-estate-pricing-heading">Real Estate Pricing</h2>
-            <p class="subhead">Straightforward rates for photos, video, and bundled property coverage.</p>
+        <div class="panel contact-panel pricing-panel-page">
+          <h1>Pricing</h1>
+          <p class="subhead">Simple package rates for real estate shoots, client photo sessions, and video projects.</p>
+
+          <div class="contact-cards pricing-cards">
+            <div class="contact-card pricing-card">
+              <div class="contact-label">Real Estate Photos</div>
+              <div class="contact-value">$80–$120</div>
+              <p class="pricing-copy">Clean listing photography sized to the home, with fast turnaround for agents and sellers.</p>
+            </div>
+
+            <div class="contact-card pricing-card">
+              <div class="contact-label">Real Estate Video</div>
+              <div class="contact-value">$75–$100</div>
+              <p class="pricing-copy">Walkthrough video coverage for listings that need motion, flow, and stronger online presentation.</p>
+            </div>
+
+            <div class="contact-card pricing-card">
+              <div class="contact-label">Client Photo Sessions</div>
+              <div class="contact-value">$50–$100+</div>
+              <p class="pricing-copy">Portraits, couples, branding, events, and creative sessions with flexible timing and deliverables.</p>
+            </div>
           </div>
 
-          <div class="pricing-groups pricing-groups--three-up">
-            <article class="pricing-group">
-              <h3>Photos</h3>
-              <div class="pricing-options">
-                <div class="pricing-option">
-                  <p class="pricing-amount">$80</p>
-                  <p class="pricing-detail">1,000–3,000 sq. ft.</p>
-                </div>
-                <div class="pricing-option">
-                  <p class="pricing-amount">$120</p>
-                  <p class="pricing-detail">3,000+ sq. ft.</p>
-                </div>
+          <div class="contact-note pricing-note">
+            <div class="note-title">Need a custom quote?</div>
+            <div class="note-text">Larger homes, longer sessions, bundled media, and brand projects can be priced around your exact scope.</div>
+          </div>
+        </div>
+
+        <div class="panel form-panel pricing-panel-page">
+          <h2>Service Rates</h2>
+          <p class="subhead">The layout matches the contact page, but the details here focus on package pricing instead of contact info.</p>
+
+          <div class="contact-cards pricing-cards pricing-cards--stacked">
+            <div class="contact-card pricing-card">
+              <div class="contact-label">Real Estate Photo Packages</div>
+              <div class="pricing-breakdown">
+                <div class="pricing-row"><span>1,000–3,000 sq. ft.</span><strong>$80</strong></div>
+                <div class="pricing-row"><span>3,000+ sq. ft.</span><strong>$120</strong></div>
               </div>
-            </article>
+            </div>
 
-            <article class="pricing-group">
-              <h3>Video</h3>
-              <div class="pricing-options">
-                <div class="pricing-option">
-                  <p class="pricing-amount">$75</p>
-                  <p class="pricing-detail">1,000–3,000 sq. ft.</p>
-                </div>
-                <div class="pricing-option">
-                  <p class="pricing-amount">$100</p>
-                  <p class="pricing-detail">3,000+ sq. ft.</p>
-                </div>
+            <div class="contact-card pricing-card">
+              <div class="contact-label">Real Estate Video Packages</div>
+              <div class="pricing-breakdown">
+                <div class="pricing-row"><span>1,000–3,000 sq. ft.</span><strong>$75</strong></div>
+                <div class="pricing-row"><span>3,000+ sq. ft.</span><strong>$100</strong></div>
               </div>
-            </article>
+            </div>
 
-            <article class="pricing-group">
-              <h3>Photos + Video Package</h3>
-              <div class="pricing-options">
-                <div class="pricing-option">
-                  <p class="pricing-amount">$140</p>
-                  <p class="pricing-detail">1,000–3,000 sq. ft.</p>
-                </div>
-                <div class="pricing-option">
-                  <p class="pricing-amount">$200</p>
-                  <p class="pricing-detail">3,000+ sq. ft.</p>
-                </div>
+            <div class="contact-card pricing-card">
+              <div class="contact-label">Real Estate Photo + Video</div>
+              <div class="pricing-breakdown">
+                <div class="pricing-row"><span>1,000–3,000 sq. ft.</span><strong>$140</strong></div>
+                <div class="pricing-row"><span>3,000+ sq. ft.</span><strong>$200</strong></div>
               </div>
-            </article>
-          </div>
-        </section>
+            </div>
 
-        <section class="panel pricing-panel" aria-labelledby="client-pricing-heading">
-          <div class="pricing-panel__intro">
-            <p class="eyebrow">Pricing</p>
-            <h2 id="client-pricing-heading">Photos, Portraits, Events & Product Branding</h2>
-            <p class="subhead">Flexible session lengths with photo counts included, so it is easy to scale packages later.</p>
-          </div>
-
-          <div class="pricing-groups">
-            <article class="pricing-group">
-              <h3>Photography Sessions</h3>
-              <div class="pricing-options">
-                <div class="pricing-option">
-                  <p class="pricing-amount">$50</p>
-                  <p class="pricing-detail">30-minute session · 20 photos</p>
-                </div>
-                <div class="pricing-option">
-                  <p class="pricing-amount">$75</p>
-                  <p class="pricing-detail">60-minute session · 40 photos</p>
-                </div>
-                <div class="pricing-option">
-                  <p class="pricing-amount">$100+</p>
-                  <p class="pricing-detail">1 hour+ sessions</p>
-                </div>
+            <div class="contact-card pricing-card">
+              <div class="contact-label">Client Photography Sessions</div>
+              <div class="pricing-breakdown">
+                <div class="pricing-row"><span>30-minute session · 20 photos</span><strong>$50</strong></div>
+                <div class="pricing-row"><span>60-minute session · 40 photos</span><strong>$75</strong></div>
+                <div class="pricing-row"><span>1 hour+ sessions</span><strong>$100+</strong></div>
               </div>
-            </article>
-          </div>
-        </section>
+            </div>
 
-        <section class="panel pricing-panel" aria-labelledby="video-pricing-heading">
-          <div class="pricing-panel__intro">
-            <p class="eyebrow">Pricing</p>
-            <h2 id="video-pricing-heading">Video Pricing</h2>
-            <p class="subhead">Rates for company ads, b-roll, product videos, and longer-form sessions.</p>
-          </div>
-
-          <div class="pricing-groups">
-            <article class="pricing-group">
-              <h3>Video Sessions</h3>
-              <div class="pricing-options">
-                <div class="pricing-option">
-                  <p class="pricing-amount">$75</p>
-                  <p class="pricing-detail">60-minute session</p>
-                </div>
-                <div class="pricing-option">
-                  <p class="pricing-amount">$150</p>
-                  <p class="pricing-detail">120-minute session</p>
-                </div>
-                <div class="pricing-option">
-                  <p class="pricing-amount">$180+</p>
-                  <p class="pricing-detail">2 hour+ sessions</p>
-                </div>
+            <div class="contact-card pricing-card">
+              <div class="contact-label">Video Sessions</div>
+              <div class="pricing-breakdown">
+                <div class="pricing-row"><span>60-minute session</span><strong>$75</strong></div>
+                <div class="pricing-row"><span>120-minute session</span><strong>$150</strong></div>
+                <div class="pricing-row"><span>2 hour+ sessions</span><strong>$180+</strong></div>
               </div>
-            </article>
+            </div>
           </div>
-        </section>
+        </div>
+
       </div>
     </section>
   </main>
