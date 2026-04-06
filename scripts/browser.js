@@ -13,8 +13,6 @@ const MEDIA = {
     "images/re-subpage/white-black-boogaloo-02.webp",
     "images/re-subpage/white-black-boogaloo-03.webp",
     "images/re-subpage/white-black-boogaloo-04.webp",
-    "images/re-subpage/white-black-boogaloo-05.webp",
-    "images/re-subpage/white-black-boogaloo-06.webp",
     "images/re-subpage/white-black-boogaloo-07.webp",
     "images/re-subpage/white-black-boogaloo-08.webp",
     "images/re-subpage/white-black-boogaloo-09.webp",
@@ -30,8 +28,6 @@ const MEDIA = {
 //   List of all photos included in the scroller 
   clients: [
     "images/company-subpage/comp-big-red.webp",
-    "images/company-subpage/comp-filling-gas.webp",
-    "images/company-subpage/comp-load-er-up.webp",
     "images/company-subpage/comp-plumbers-crack.webp",
     "images/company-subpage/comp-touching-engine.webp",
     "images/company-subpage/portraits-couple-1.webp",
